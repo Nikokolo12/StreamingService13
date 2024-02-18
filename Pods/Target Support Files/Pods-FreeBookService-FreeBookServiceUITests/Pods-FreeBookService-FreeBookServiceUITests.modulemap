@@ -1,0 +1,6 @@
+framework module Pods_FreeBookService_FreeBookServiceUITests {
+  umbrella header "Pods-FreeBookService-FreeBookServiceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

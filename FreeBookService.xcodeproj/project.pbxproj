@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EECA5A87ACEF58159DA8EB9 /* Pods_FreeBookService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5526419241E14A0AF7650D /* Pods_FreeBookService.framework */; };
+		43C03ABD8D63C993563038D7 /* Pods_FreeBookServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B6A307BA5D7DBE9FA3B28D /* Pods_FreeBookServiceTests.framework */; };
+		BF8E850FAD7B255CD19A9F05 /* Pods_FreeBookService_FreeBookServiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CE49CF59AA25BC6507F946 /* Pods_FreeBookService_FreeBookServiceUITests.framework */; };
+		CE09C3252AC0CDCF00B64744 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE09C3242AC0CDCF00B64744 /* GoogleService-Info.plist */; };
+		CE2A6CBF2AC0CCC200AC5DC9 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = CE2A6CBE2AC0CCC200AC5DC9 /* FirebaseAnalyticsOnDeviceConversion */; };
+		CE2A6CC12AC0CCC200AC5DC9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE2A6CC02AC0CCC200AC5DC9 /* FirebaseAuth */; };
+		CE2A6CC32AC0CCC200AC5DC9 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = CE2A6CC22AC0CCC200AC5DC9 /* FirebaseAuthCombine-Community */; };
+		CE2A6CC52AC0CCC200AC5DC9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE2A6CC42AC0CCC200AC5DC9 /* FirebaseDatabase */; };
+		CE2A6CC72AC0CCC200AC5DC9 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE2A6CC62AC0CCC200AC5DC9 /* FirebaseDatabaseSwift */; };
+		CE2A6CC92AC0CCC200AC5DC9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE2A6CC82AC0CCC200AC5DC9 /* FirebaseFirestore */; };
+		CE52EDBB2AB76CAB00741CEB /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EDBA2AB76CAB00741CEB /* CollectionViewTableViewCell.swift */; };
+		CE52EDBD2AB79B6800741CEB /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EDBC2AB79B6800741CEB /* MainHeaderView.swift */; };
+		CE9731D92AB604D800BE8FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9731D82AB604D800BE8FDB /* AppDelegate.swift */; };
+		CE9731DB2AB604D800BE8FDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9731DA2AB604D800BE8FDB /* SceneDelegate.swift */; };
+		CE9731DD2AB604D800BE8FDB /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9731DC2AB604D800BE8FDB /* MainTabBarViewController.swift */; };
+		CE9731E22AB604E300BE8FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9731E12AB604E300BE8FDB /* Assets.xcassets */; };
+		CE9731E52AB604E300BE8FDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9731E32AB604E300BE8FDB /* LaunchScreen.storyboard */; };
+		CE9731F02AB604E400BE8FDB /* FreeBookServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9731EF2AB604E400BE8FDB /* FreeBookServiceTests.swift */; };
+		CE9731FA2AB604E400BE8FDB /* FreeBookServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9731F92AB604E400BE8FDB /* FreeBookServiceUITests.swift */; };
+		CE9731FC2AB604E400BE8FDB /* FreeBookServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9731FB2AB604E400BE8FDB /* FreeBookServiceUITestsLaunchTests.swift */; };
+		CE97320E2AB630A100BE8FDB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97320D2AB630A100BE8FDB /* HomeViewController.swift */; };
+		CE9732102AB630B400BE8FDB /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97320F2AB630B400BE8FDB /* MoreViewController.swift */; };
+		CE9732122AB6310400BE8FDB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9732112AB6310400BE8FDB /* SearchViewController.swift */; };
+		CE9732142AB6312200BE8FDB /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9732132AB6312200BE8FDB /* DownloadsViewController.swift */; };
+		CEF3BF022AC09E7700CF0E09 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF3BF012AC09E7700CF0E09 /* BooksViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9731EC2AB604E400BE8FDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9731CD2AB604D800BE8FDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9731D42AB604D800BE8FDB;
+			remoteInfo = Netflix;
+		};
+		CE9731F62AB604E400BE8FDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9731CD2AB604D800BE8FDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9731D42AB604D800BE8FDB;
+			remoteInfo = Netflix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33006ACC02E8DF91C34BFCDC /* Pods-FreeBookService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBookService.debug.xcconfig"; path = "Target Support Files/Pods-FreeBookService/Pods-FreeBookService.debug.xcconfig"; sourceTree = "<group>"; };
+		3B84F0BAD46ABCE31ED3E5A1 /* Pods-FreeBookServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBookServiceTests.release.xcconfig"; path = "Target Support Files/Pods-FreeBookServiceTests/Pods-FreeBookServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F7AA4D13015AEB447A0626C /* Pods-FreeBookService-FreeBookServiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBookService-FreeBookServiceUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeBookService-FreeBookServiceUITests/Pods-FreeBookService-FreeBookServiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		44CE49CF59AA25BC6507F946 /* Pods_FreeBookService_FreeBookServiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeBookService_FreeBookServiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA0013BEDA532FD3A70CA08 /* Pods-FreeBookService-FreeBookServiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBookService-FreeBookServiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-FreeBookService-FreeBookServiceUITests/Pods-FreeBookService-FreeBookServiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		876970EC3FBC0F856A89F244 /* Pods-FreeBookServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBookServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-FreeBookServiceTests/Pods-FreeBookServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B6A307BA5D7DBE9FA3B28D /* Pods_FreeBookServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeBookServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A300DDE573AD0FE54EE88C /* Pods-FreeBookService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeBookService.release.xcconfig"; path = "Target Support Files/Pods-FreeBookService/Pods-FreeBookService.release.xcconfig"; sourceTree = "<group>"; };
+		CE09C3242AC0CDCF00B64744 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE52EDBA2AB76CAB00741CEB /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		CE52EDBC2AB79B6800741CEB /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		CE9731D52AB604D800BE8FDB /* FreeBookService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeBookService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9731D82AB604D800BE8FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE9731DA2AB604D800BE8FDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE9731DC2AB604D800BE8FDB /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		CE9731E12AB604E300BE8FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9731E42AB604E300BE8FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE9731E62AB604E300BE8FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9731EB2AB604E400BE8FDB /* FreeBookServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeBookServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9731EF2AB604E400BE8FDB /* FreeBookServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBookServiceTests.swift; sourceTree = "<group>"; };
+		CE9731F52AB604E400BE8FDB /* FreeBookServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeBookServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9731F92AB604E400BE8FDB /* FreeBookServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBookServiceUITests.swift; sourceTree = "<group>"; };
+		CE9731FB2AB604E400BE8FDB /* FreeBookServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBookServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE97320D2AB630A100BE8FDB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE97320F2AB630B400BE8FDB /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		CE9732112AB6310400BE8FDB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CE9732132AB6312200BE8FDB /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		CEF3BF012AC09E7700CF0E09 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		FE5526419241E14A0AF7650D /* Pods_FreeBookService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeBookService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9731D22AB604D800BE8FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2A6CC72AC0CCC200AC5DC9 /* FirebaseDatabaseSwift in Frameworks */,
+				CE2A6CC52AC0CCC200AC5DC9 /* FirebaseDatabase in Frameworks */,
+				CE2A6CC12AC0CCC200AC5DC9 /* FirebaseAuth in Frameworks */,
+				CE2A6CBF2AC0CCC200AC5DC9 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				CE2A6CC32AC0CCC200AC5DC9 /* FirebaseAuthCombine-Community in Frameworks */,
+				CE2A6CC92AC0CCC200AC5DC9 /* FirebaseFirestore in Frameworks */,
+				0EECA5A87ACEF58159DA8EB9 /* Pods_FreeBookService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9731E82AB604E400BE8FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C03ABD8D63C993563038D7 /* Pods_FreeBookServiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9731F22AB604E400BE8FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8E850FAD7B255CD19A9F05 /* Pods_FreeBookService_FreeBookServiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EAB1607C96CC2D6CA0A1CBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33006ACC02E8DF91C34BFCDC /* Pods-FreeBookService.debug.xcconfig */,
+				B9A300DDE573AD0FE54EE88C /* Pods-FreeBookService.release.xcconfig */,
+				6CA0013BEDA532FD3A70CA08 /* Pods-FreeBookService-FreeBookServiceUITests.debug.xcconfig */,
+				3F7AA4D13015AEB447A0626C /* Pods-FreeBookService-FreeBookServiceUITests.release.xcconfig */,
+				876970EC3FBC0F856A89F244 /* Pods-FreeBookServiceTests.debug.xcconfig */,
+				3B84F0BAD46ABCE31ED3E5A1 /* Pods-FreeBookServiceTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71321123C756719DC119B93C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE5526419241E14A0AF7650D /* Pods_FreeBookService.framework */,
+				44CE49CF59AA25BC6507F946 /* Pods_FreeBookService_FreeBookServiceUITests.framework */,
+				A0B6A307BA5D7DBE9FA3B28D /* Pods_FreeBookServiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE52EDB42AB76BF100741CEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE52EDBA2AB76CAB00741CEB /* CollectionViewTableViewCell.swift */,
+				CE52EDBC2AB79B6800741CEB /* MainHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE52EDB52AB76BF800741CEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE52EDB62AB76BFD00741CEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE52EDB72AB76C2F00741CEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE52EDB92AB76C4200741CEB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CE9731CC2AB604D800BE8FDB = {
+			isa = PBXGroup;
+			children = (
+				CE9731D72AB604D800BE8FDB /* FreeBookService */,
+				CE9731EE2AB604E400BE8FDB /* FreeBookServiceTests */,
+				CE9731F82AB604E400BE8FDB /* FreeBookServiceUITests */,
+				CE9731D62AB604D800BE8FDB /* Products */,
+				3EAB1607C96CC2D6CA0A1CBF /* Pods */,
+				71321123C756719DC119B93C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9731D62AB604D800BE8FDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9731D52AB604D800BE8FDB /* FreeBookService.app */,
+				CE9731EB2AB604E400BE8FDB /* FreeBookServiceTests.xctest */,
+				CE9731F52AB604E400BE8FDB /* FreeBookServiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9731D72AB604D800BE8FDB /* FreeBookService */ = {
+			isa = PBXGroup;
+			children = (
+				CE9731D82AB604D800BE8FDB /* AppDelegate.swift */,
+				CE9731DA2AB604D800BE8FDB /* SceneDelegate.swift */,
+				CE9731DC2AB604D800BE8FDB /* MainTabBarViewController.swift */,
+				CE52EDB92AB76C4200741CEB /* Managers */,
+				CE52EDB72AB76C2F00741CEB /* Resources */,
+				CE52EDB62AB76BFD00741CEB /* ViewModels */,
+				CE52EDB52AB76BF800741CEB /* Models */,
+				CE52EDB42AB76BF100741CEB /* Views */,
+				CE9732082AB62F9100BE8FDB /* Controllers */,
+				CE9731E12AB604E300BE8FDB /* Assets.xcassets */,
+				CE9731E32AB604E300BE8FDB /* LaunchScreen.storyboard */,
+				CE09C3242AC0CDCF00B64744 /* GoogleService-Info.plist */,
+				CE9731E62AB604E300BE8FDB /* Info.plist */,
+			);
+			path = FreeBookService;
+			sourceTree = "<group>";
+		};
+		CE9731EE2AB604E400BE8FDB /* FreeBookServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9731EF2AB604E400BE8FDB /* FreeBookServiceTests.swift */,
+			);
+			path = FreeBookServiceTests;
+			sourceTree = "<group>";
+		};
+		CE9731F82AB604E400BE8FDB /* FreeBookServiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9731F92AB604E400BE8FDB /* FreeBookServiceUITests.swift */,
+				CE9731FB2AB604E400BE8FDB /* FreeBookServiceUITestsLaunchTests.swift */,
+			);
+			path = FreeBookServiceUITests;
+			sourceTree = "<group>";
+		};
+		CE9732082AB62F9100BE8FDB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE97320D2AB630A100BE8FDB /* HomeViewController.swift */,
+				CEF3BF012AC09E7700CF0E09 /* BooksViewController.swift */,
+				CE9732112AB6310400BE8FDB /* SearchViewController.swift */,
+				CE9732132AB6312200BE8FDB /* DownloadsViewController.swift */,
+				CE97320F2AB630B400BE8FDB /* MoreViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9731D42AB604D800BE8FDB /* FreeBookService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9731FF2AB604E400BE8FDB /* Build configuration list for PBXNativeTarget "FreeBookService" */;
+			buildPhases = (
+				3E51A0E2D9C2A5048F84CC6D /* [CP] Check Pods Manifest.lock */,
+				CE9731D12AB604D800BE8FDB /* Sources */,
+				CE9731D22AB604D800BE8FDB /* Frameworks */,
+				CE9731D32AB604D800BE8FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeBookService;
+			packageProductDependencies = (
+				CE2A6CBE2AC0CCC200AC5DC9 /* FirebaseAnalyticsOnDeviceConversion */,
+				CE2A6CC02AC0CCC200AC5DC9 /* FirebaseAuth */,
+				CE2A6CC22AC0CCC200AC5DC9 /* FirebaseAuthCombine-Community */,
+				CE2A6CC42AC0CCC200AC5DC9 /* FirebaseDatabase */,
+				CE2A6CC62AC0CCC200AC5DC9 /* FirebaseDatabaseSwift */,
+				CE2A6CC82AC0CCC200AC5DC9 /* FirebaseFirestore */,
+			);
+			productName = Netflix;
+			productReference = CE9731D52AB604D800BE8FDB /* FreeBookService.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9731EA2AB604E400BE8FDB /* FreeBookServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9732022AB604E400BE8FDB /* Build configuration list for PBXNativeTarget "FreeBookServiceTests" */;
+			buildPhases = (
+				F1FF462091F0370AC2C98267 /* [CP] Check Pods Manifest.lock */,
+				CE9731E72AB604E400BE8FDB /* Sources */,
+				CE9731E82AB604E400BE8FDB /* Frameworks */,
+				CE9731E92AB604E400BE8FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9731ED2AB604E400BE8FDB /* PBXTargetDependency */,
+			);
+			name = FreeBookServiceTests;
+			productName = NetflixTests;
+			productReference = CE9731EB2AB604E400BE8FDB /* FreeBookServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE9731F42AB604E400BE8FDB /* FreeBookServiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9732052AB604E400BE8FDB /* Build configuration list for PBXNativeTarget "FreeBookServiceUITests" */;
+			buildPhases = (
+				293473B03C753F91A936DD82 /* [CP] Check Pods Manifest.lock */,
+				CE9731F12AB604E400BE8FDB /* Sources */,
+				CE9731F22AB604E400BE8FDB /* Frameworks */,
+				CE9731F32AB604E400BE8FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9731F72AB604E400BE8FDB /* PBXTargetDependency */,
+			);
+			name = FreeBookServiceUITests;
+			productName = NetflixUITests;
+			productReference = CE9731F52AB604E400BE8FDB /* FreeBookServiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9731CD2AB604D800BE8FDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CE9731D42AB604D800BE8FDB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					CE9731EA2AB604E400BE8FDB = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CE9731D42AB604D800BE8FDB;
+					};
+					CE9731F42AB604E400BE8FDB = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CE9731D42AB604D800BE8FDB;
+					};
+				};
+			};
+			buildConfigurationList = CE9731D02AB604D800BE8FDB /* Build configuration list for PBXProject "FreeBookService" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9731CC2AB604D800BE8FDB;
+			packageReferences = (
+				CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CE9731D62AB604D800BE8FDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9731D42AB604D800BE8FDB /* FreeBookService */,
+				CE9731EA2AB604E400BE8FDB /* FreeBookServiceTests */,
+				CE9731F42AB604E400BE8FDB /* FreeBookServiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9731D32AB604D800BE8FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9731E52AB604E300BE8FDB /* LaunchScreen.storyboard in Resources */,
+				CE9731E22AB604E300BE8FDB /* Assets.xcassets in Resources */,
+				CE09C3252AC0CDCF00B64744 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9731E92AB604E400BE8FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9731F32AB604E400BE8FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		293473B03C753F91A936DD82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeBookService-FreeBookServiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E51A0E2D9C2A5048F84CC6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeBookService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FF462091F0370AC2C98267 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeBookServiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9731D12AB604D800BE8FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9732122AB6310400BE8FDB /* SearchViewController.swift in Sources */,
+				CE9731DD2AB604D800BE8FDB /* MainTabBarViewController.swift in Sources */,
+				CE52EDBB2AB76CAB00741CEB /* CollectionViewTableViewCell.swift in Sources */,
+				CE9732142AB6312200BE8FDB /* DownloadsViewController.swift in Sources */,
+				CE52EDBD2AB79B6800741CEB /* MainHeaderView.swift in Sources */,
+				CEF3BF022AC09E7700CF0E09 /* BooksViewController.swift in Sources */,
+				CE9731D92AB604D800BE8FDB /* AppDelegate.swift in Sources */,
+				CE9731DB2AB604D800BE8FDB /* SceneDelegate.swift in Sources */,
+				CE9732102AB630B400BE8FDB /* MoreViewController.swift in Sources */,
+				CE97320E2AB630A100BE8FDB /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9731E72AB604E400BE8FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9731F02AB604E400BE8FDB /* FreeBookServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9731F12AB604E400BE8FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9731FA2AB604E400BE8FDB /* FreeBookServiceUITests.swift in Sources */,
+				CE9731FC2AB604E400BE8FDB /* FreeBookServiceUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9731ED2AB604E400BE8FDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9731D42AB604D800BE8FDB /* FreeBookService */;
+			targetProxy = CE9731EC2AB604E400BE8FDB /* PBXContainerItemProxy */;
+		};
+		CE9731F72AB604E400BE8FDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9731D42AB604D800BE8FDB /* FreeBookService */;
+			targetProxy = CE9731F62AB604E400BE8FDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE9731E32AB604E300BE8FDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9731E42AB604E300BE8FDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9731FD2AB604E400BE8FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE9731FE2AB604E400BE8FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9732002AB604E400BE8FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33006ACC02E8DF91C34BFCDC /* Pods-FreeBookService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreeBookService/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FreeBookService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9732012AB604E400BE8FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A300DDE573AD0FE54EE88C /* Pods-FreeBookService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreeBookService/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FreeBookService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE9732032AB604E400BE8FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876970EC3FBC0F856A89F244 /* Pods-FreeBookServiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FreeBookServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeBookService.app/FreeBookService";
+			};
+			name = Debug;
+		};
+		CE9732042AB604E400BE8FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B84F0BAD46ABCE31ED3E5A1 /* Pods-FreeBookServiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FreeBookServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeBookService.app/FreeBookService";
+			};
+			name = Release;
+		};
+		CE9732062AB604E400BE8FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA0013BEDA532FD3A70CA08 /* Pods-FreeBookService-FreeBookServiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FreeBookServiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreeBookService;
+			};
+			name = Debug;
+		};
+		CE9732072AB604E400BE8FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7AA4D13015AEB447A0626C /* Pods-FreeBookService-FreeBookServiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.FreeBookServiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreeBookService;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9731D02AB604D800BE8FDB /* Build configuration list for PBXProject "FreeBookService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9731FD2AB604E400BE8FDB /* Debug */,
+				CE9731FE2AB604E400BE8FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9731FF2AB604E400BE8FDB /* Build configuration list for PBXNativeTarget "FreeBookService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9732002AB604E400BE8FDB /* Debug */,
+				CE9732012AB604E400BE8FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9732022AB604E400BE8FDB /* Build configuration list for PBXNativeTarget "FreeBookServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9732032AB604E400BE8FDB /* Debug */,
+				CE9732042AB604E400BE8FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9732052AB604E400BE8FDB /* Build configuration list for PBXNativeTarget "FreeBookServiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9732062AB604E400BE8FDB /* Debug */,
+				CE9732072AB604E400BE8FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE2A6CBE2AC0CCC200AC5DC9 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		CE2A6CC02AC0CCC200AC5DC9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CE2A6CC22AC0CCC200AC5DC9 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		CE2A6CC42AC0CCC200AC5DC9 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		CE2A6CC62AC0CCC200AC5DC9 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		CE2A6CC82AC0CCC200AC5DC9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2A6CBD2AC0CCC200AC5DC9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE9731CD2AB604D800BE8FDB /* Project object */;
+}
